@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Game In Play</title>
+    <link rel="stylesheet" type="text/css" href="style_sheet.css">
+</head>
+
+<body id="body">
+    <!--Header-->
+    <div id="header">
+        <h1>A Game of Memory</h1>
+    </div>
+
+    <!--sideBar-->
+    <div id="navBar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gameGrid.html" target="_blank">Play Game</a>
+        </ul>
+    </div>
+
+    <!--main area-->
+    <div id="main2">
+        
+        <div class="divStyle" id="sideBar-status">
+            <div id="input-container">
+                <legend>Enter Name</legend>
+                <input id="input" type="text" maxlength="20">
+            </div>
+            
+            <select id="theme">
+                <option selected="selected">Select Theme</option>
+                <option value="Playing Cards">Playing Cards</option>
+                <option value="Landscapes">Landscapes</option>
+                <option value="Amimals">Animals</option>
+            </select>
+            
+            <div id="name"></div>
+            <button id="removeLS_btn">Remove</button>
+            <div id="debug">Debug Info:</div>
+            
+            
+            <h3 class="game-data">Score: <span id="score"></span></h3>
+            <h3 class="game-data">Level: <span id="level"></span></h3>
+            <h3 class="game-data">Time: <span id="time">300.99</span></h3>
+
+            <div id="controls">
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+                <button id="save-btn">Save</button>
+                <button id="load-btn">LoadJSON</button>
+            </div>
+
+        </div>
+        <!--end stats sideBar-->
+
+        <!--game grid -->
+        <div id="grid-container"></div>
+        <!--end grid-->
+        
+        <div class="divStyle" id="jsonOutput"></div>
+        
+    </div>
+    <!--end main area-->
+    <script src="gameModel.js" type="text/javascript"></script>
+    <script src="gameGrid.js" type="text/javascript"></script>
+    <script src="display_json.js" type="text/javascript"></script>
+</body>
+
+</html>

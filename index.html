@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Game Description</title>
+    <link rel="stylesheet" type="text/css" href="style_sheet.css">
+    <script src="login.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+    <stript src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></stript>
+    <![endif]-->
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header">
+        <h1>A Game of Memory</h1>
+    </header>
+
+    <!--sideBar-->
+    <div id="navBar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gameGrid.html" target="_blank">Play Game</a></li>
+        </ul>
+    </div>
+
+    <!--main area-->
+    <div class="main_content">
+        <h2>Game Description</h2>
+        <p>
+            Concentration, also known as Memory, Pelmanism, Shinkei-suijaku, Pexeso and Pairs. Click <a href="https://en.wikipedia.org/wiki/Concentration_(game)" target="_blank">here</a> for Wikipedia article. Memory is fun, easy to learn and play. It puts your memory to the test. It challenges your concentration. The game is timed so it also challenges your thinking speed! There are different levels of difficulty. The lowest level being four cards. Each level that is completed more cards are displayed. There is a limited time to finish the each level. This will naturally cause the game to become more difficult. There are multiple deck of cards that have different themes. The player can choose the theme they so like from a given list.
+        </p>
+        <h2>How To Play</h2>
+        <p>
+            The player can optionally choose a theme. Click the start button and the timer will start in a few seconds giving the player time to prepare. With all the cards displayed facing down the player starts by clicking a single card "turning" it over displaying its front image. The Player will click another card "turning" it over showing its front image. If the two cards match the player recieves a point. A point is given for each matching pair. The matching cards will stay facing up displaying their front images. If the second card that was chosen is not a match to the first chosen card, both cards will display their front images for a breaf moment for the player to try and memorize their images and their placement then they will both flip back to their back facing images. When a level is fully completed the next level will appear. The player will then start the timer when ready to play. Also, the player can pause the game, halting the timer and disabling the cards. If the timer ends before all matches are found, then the level will restart with the new cards rearranged. A theme can be choosen at the beginning of each new level before a session is started.
+        </p>
+        Below is a simple flow chart of the game.
+        <img src="images/game-diagram-2.0.png" style="width: 700px">
+        <h2>Prelimenary Software Design</h2>
+        <p><a href="design.html" target="_blank">Click Here!</a></p>
+
+        <h2>CheckPoint</h2>
+        <p><a href="checkpoint.html" target="_blank">Click Here!</a></p>
+
+        <h2>Log In Here</h2>
+        <div class="login">
+            User name:
+            <input id="username" type="text" name="username">
+            <br> Password:
+            <input id="password" type="password" name="password">
+            <br>
+
+            <button id="login_btn">LOG IN</button>
+            <p id="requestData"></p>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
